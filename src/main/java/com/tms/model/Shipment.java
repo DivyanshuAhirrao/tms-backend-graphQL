@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
 })
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
 @Builder
 public class Shipment {
     
