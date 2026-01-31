@@ -32,9 +32,9 @@ public class ShipmentMutationResolver {
     public AuthPayload login(@Argument String username, @Argument String password) {
         log.info("Mutation: login for user: {}", username);
         
-//        Authentication authentication = authenticationManager.authenticate(
-//            new UsernamePasswordAuthenticationToken(username, password)
-//        );
+        Authentication authentication = authenticationManager.authenticate(
+            new UsernamePasswordAuthenticationToken(username, password)
+        );
         
         User user = userRepository.findByUsername(username)
             .orElseThrow(() -> new RuntimeException("User not found"));
