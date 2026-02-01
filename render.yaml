@@ -12,7 +12,7 @@ services:
       - key: JWT_EXPIRATION
         value: 86400000
       - key: CORS_ALLOWED_ORIGINS
-        value: https://tms-frontend.vercel.app,http://localhost:3000
+        value: https://tms-frontend-ivory.vercel.app,http://localhost:3000
       - key: H2_CONSOLE_ENABLED
         value: true
     healthCheckPath: /graphql
